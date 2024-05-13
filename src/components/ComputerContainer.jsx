@@ -1,5 +1,14 @@
 import PropTypes from 'prop-types';
 
+/**
+ * Functional component for displaying the computer's current game state in the game.
+ * This includes the computer's score and the current choice (e.g., rock, paper, scissors, lizard, spock).
+ * Additional icons are displayed for each possible choice, which could be styled to indicate the current choice.
+ * @param {Object} props - Component props.
+ * @param {number} props.score - The current score of the computer.
+ * @param {string} props.choice - The current choice of the computer. This is expected to be one of the game's options.
+ * @returns {React.Component} A container element with display elements for the computer's score and choice, along with icons for each game option.
+ */
 function ComputerContainer({ score, choice }) {
   return (
     <div className='computer-container' id='computer'>
