@@ -1,8 +1,10 @@
-import { rules, choices, computerRandomChoice, displayRule } from './game';
-
 import { useState } from 'react';
+
 import Header from './components/Header';
+import PlayerContainer from './components/PlayerContainer';
+
 import { startConfetti, stopConfetti, removeConfetti } from './confetti';
+import { rules, choices, computerRandomChoice, displayRule } from './game';
 
 function App() {
   const [scores, setScores] = useState({ player: 0, computer: 0 });
@@ -55,6 +57,7 @@ function App() {
   return (
     <div className='game-container'>
       <Header resetAll={resetAll} />
+      <PlayerContainer score={scores.player} choice={playerChoice} onSelect={select} />
     </div>
   );
 }
