@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function ResultText({ text }) {
   return (
     <div className='result-container'>
@@ -7,5 +9,9 @@ function ResultText({ text }) {
     </div>
   );
 }
+
+ResultText.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default ResultText;

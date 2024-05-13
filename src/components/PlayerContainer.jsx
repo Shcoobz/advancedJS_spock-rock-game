@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function PlayerContainer({ score, choice, onSelect }) {
   return (
     <div className='player-container' id='player'>
@@ -36,5 +38,11 @@ function PlayerContainer({ score, choice, onSelect }) {
     </div>
   );
 }
+
+PlayerContainer.propTypes = {
+  score: PropTypes.number.isRequired,
+  choice: PropTypes.string.isRequired,
+  onSelect: PropTypes.func.isRequired,
+};
 
 export default PlayerContainer;

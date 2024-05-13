@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function ResultRule({ rule }) {
   return (
     <div className='rule-container'>
@@ -8,5 +10,9 @@ function ResultRule({ rule }) {
     </div>
   );
 }
+
+ResultRule.propTypes = {
+  rule: PropTypes.string.isRequired,
+};
 
 export default ResultRule;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function ComputerContainer({ score, choice }) {
   return (
     <div className='computer-container' id='computer'>
@@ -16,5 +18,10 @@ function ComputerContainer({ score, choice }) {
     </div>
   );
 }
+
+ComputerContainer.propTypes = {
+  score: PropTypes.number.isRequired,
+  choice: PropTypes.string.isRequired,
+};
 
 export default ComputerContainer;

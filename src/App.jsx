@@ -6,8 +6,8 @@ import ComputerContainer from './components/ComputerContainer';
 import ResultRule from './components/ResultRule';
 import ResultText from './components/ResultText';
 
-import { startConfetti, stopConfetti, removeConfetti } from './confetti';
-import { rules, choices, computerRandomChoice, displayRule } from './game';
+import { startConfetti, stopConfetti, removeConfetti } from './utils/confetti';
+import { rules, computerRandomChoice, displayRule } from './utils/game';
 
 function App() {
   const [scores, setScores] = useState({ player: 0, computer: 0 });

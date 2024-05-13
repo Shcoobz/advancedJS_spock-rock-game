@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Header({ resetAll }) {
   return (
     <div className='header'>
@@ -6,5 +8,9 @@ function Header({ resetAll }) {
     </div>
   );
 }
+
+Header.propTypes = {
+  resetAll: PropTypes.func.isRequired,
+};
 
 export default Header;
