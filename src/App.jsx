@@ -29,7 +29,9 @@ function App() {
   function updateScore(playerChoice) {
     const computerChoice = computerRandomChoice();
     setComputerChoice(computerChoice);
-    displayRule(playerChoice, computerChoice);
+
+    const ruleText = displayRule(playerChoice, computerChoice);
+    setResultRule(ruleText);
 
     if (playerChoice === computerChoice) {
       setResultText("It's a tie.");

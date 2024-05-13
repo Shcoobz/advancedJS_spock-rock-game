@@ -23,15 +23,15 @@ function displayRule(playerChoice, computerChoice) {
 
   let ruleText = 'Nothing happens.';
   if (playerWinningRule) {
-    ruleText = `<span class="player-color">${capitalizeFirstLetter(
+    ruleText = `<span style="color: var(--player-color);">${capitalizeFirstLetter(
       playerChoice
-    )}</span> ${playerWinningRule} <span class="computer-color">${capitalizeFirstLetter(
+    )}</span> ${playerWinningRule} <span style="color: var(--computer-color);">${capitalizeFirstLetter(
       computerChoice
     )}</span>.`;
   } else if (computerWinningRule) {
-    ruleText = `<span class="computer-color">${capitalizeFirstLetter(
+    ruleText = `<span style="color: var(--computer-color);">${capitalizeFirstLetter(
       computerChoice
-    )}</span> ${computerWinningRule} <span class="player-color">${capitalizeFirstLetter(
+    )}</span> ${computerWinningRule} <span style="color: var(--player-color);">${capitalizeFirstLetter(
       playerChoice
     )}</span>.`;
   }
