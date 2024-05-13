@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --player-color: rgb(24, 190, 19);
+  --computer-color: rgb(235, 43, 52);
+  --selected-color: black;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: whitesmoke;
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 530px;
+  height: 600px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  background: var(--player-color);
+  height: 100px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  padding-left: 25px;
+}
+
+.reset-icon {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 25px;
+  padding-right: 25px;
+}
+
+.player-container h2,
+.computer-container h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-container h2 .player-human,
+.computer-container h2 .player-computer {
+  width: 85px;
+  text-align: left;
+}
+
+.player-container h2 .score,
+.computer-container h2 .score {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.player-container h2 .choice,
+.computer-container h2 .choice {
+  width: 100px;
+  text-align: right;
+}
+
+.player-container,
+.computer-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+  user-select: none;
+}
+
+#player .far,
+#player .choice {
+  cursor: pointer;
+  color: var(--player-color);
+}
+
+#computer .far,
+#computer .choice {
+  color: var(--computer-color);
+}
+
+#player .far:last-of-type,
+#computer .far:last-of-type {
+  margin-right: 0;
+}
+
+.selected {
+  color: var(--selected-color) !important;
+}
+
+.rule-container,
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-rule {
+  font-size: 25px;
+  margin: unset;
+  margin-top: 10px;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 30px;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+    width: 95%;
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .reset-icon {
+    font-size: 22px;
+    margin-left: 25px;
+  }
+
+  .player-container,
+  .computer-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .player-container h2 .choice,
+  .computer-container h2 .choice {
+    margin-right: 25px;
+  }
+
+  .far {
+    margin-right: 25px;
+  }
+
+  #player .far:first-of-type,
+  #computer .far:first-of-type {
+    margin-left: 5px;
+  }
+
+  .result-rule {
+    font-size: 22px;
+    margin: unset;
+    margin-top: 15px;
+  }
+
+  .result-text {
+    font-size: 35px;
+    margin: unset;
+    margin-top: 30px;
+  }
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1,
+  .reset-icon {
+    font-size: 18px;
+  }
+
+  .player-container,
+  .computer-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .player-container h2 .choice,
+  .computer-container h2 .choice {
+    margin-right: 20px;
+  }
+
+  .far {
+    font-size: 40px;
+  }
+
+  .result-rule {
+    font-size: 20px;
+    margin: unset;
+    margin-top: 15px;
+  }
+
+  .result-text {
+    font-size: 30px;
+    margin: unset;
+    margin-top: 30px;
+  }
+}
