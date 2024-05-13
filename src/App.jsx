@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import Header from './components/Header';
 import PlayerContainer from './components/PlayerContainer';
+import ComputerContainer from './components/ComputerContainer';
 
 import { startConfetti, stopConfetti, removeConfetti } from './confetti';
 import { rules, choices, computerRandomChoice, displayRule } from './game';
@@ -58,6 +59,7 @@ function App() {
     <div className='game-container'>
       <Header resetAll={resetAll} />
       <PlayerContainer score={scores.player} choice={playerChoice} onSelect={select} />
+      <ComputerContainer score={scores.computer} choice={computerChoice} />
     </div>
   );
 }
