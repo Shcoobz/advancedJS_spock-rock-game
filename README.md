@@ -1,10 +1,10 @@
-# react_Spock Rock Game: [LIVE DEMO](https://shcoobz.github.io/react_spock-rock-game/)
+# advancedJS_Spock Rock Game: [LIVE DEMO](https://shcoobz.github.io/advancedJS_spock-rock-game/)
 
-![react_spock-rock-game](public/img/react_spock-rock-game.png)
+![advancedJS_spock-rock-game](public/img/advancedJS_spock-rock-game.png)
 
 ## Summary
 
-react_spock-rock-game provides an interactive Rock Paper Scissors Lizard Spock game implemented with React. It features a user-friendly interface, engaging animations, and responsive gameplay suitable for all ages.
+advancedJS_Spock Rock Game provides an interactive Rock Paper Scissors Lizard Spock game implemented with React. It features a user-friendly interface, engaging animations, and responsive gameplay suitable for all ages.
 
 The core functionality includes:
 
@@ -41,6 +41,6 @@ Upon each selection, the game dynamically displays the rule that determined the 
 
 ---
 
-_Note: This document provides an overview of react_spock-rock-game. For detailed instructions and more information, please refer to the source code documentation._
+_Note: This document provides an overview of advancedJS_Spock Rock Game. For detailed instructions and more information, please refer to the source code documentation._
 
 _This project is a conversion from an earlier version built with vanilla JavaScript and HTML, available [here](https://github.com/Shcoobz/basicJS_spock-rock-game/). This conversion integrates React to enhance UI reactivity and maintainability._

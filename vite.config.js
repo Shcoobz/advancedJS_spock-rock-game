@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/react_spock-rock-game/',
+  base: '/advancedJS_spock-rock-game/',
   build: {
     outDir: 'build',
   },
